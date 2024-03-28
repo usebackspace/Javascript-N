@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+        var a=100;
+        document.write(a+ " " + b);
+        var b=200;
+
+        document.write('<br><br>'); 
+
+        //===================================================================
+        document.write(x); // Output: undefined
+        document.write('<br><br>'); 
+        var x = 10;
+        document.write(x); // Output: 10
+
+        document.write('<br><br>'); 
+        
+        //===================================================================
+        sayHello(); // Output: Hello, world!
+        
+        function sayHello() {
+        document.write('Hello, world!');
+        }
+
+        document.write('<br><br>'); 
+        //====================================================================
+       // document.write(y); // Throws ReferenceError: Cannot access 'y' before initialization
+        let y = 20;
+
+
+    </script>
+
+        <script>
+
+        var i=100;
+        document.write('value of i: ',i)
+
+        document.write('<br><br>'); 
+
+        function var_host(){
+            document.write('value of i inside function: ',i)
+            var i=200;
+
+        }
+
+        var_host()
+    </script>
+
+    </body>
+</html>
