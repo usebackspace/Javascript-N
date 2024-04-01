@@ -10,56 +10,56 @@
 
         <script>
 
-        //=================================================================
-        // Anonymous Function
-        var x = function(){
-            console.log('Anonymous Function')
-        };
-        x()
-        
-        //=================================================================
+            //=================================================================
+            // Anonymous Function
+            var x = function(){
+                console.log('Anonymous Function')
+            };
+            x()
+            
+            //=================================================================
 
-        // Anonymous Function With Parameter
-        var x = function(a,b){
-            console.log('Value of a:',a)
-            console.log('Value of b:',b)
-        };
-        x(100,200)
-        
-        //=================================================================
+            // Anonymous Function With Parameter
+            var x = function(a,b){
+                console.log('Value of a:',a)
+                console.log('Value of b:',b)
+            };
+            x(100,200)
+            
+            //=================================================================
 
-        // Returning Anonymous Function
-        var x = function(para){
-            //return para
-            console.log(para)
-        };
-        x('Returning Anonymous Function')
-        //console.log(x('Returning Anonymous Function'))
+            // Returning Anonymous Function
+            var x = function(para){
+                //return para
+                console.log(para)
+            };
+            x('Returning Anonymous Function')
+            //console.log(x('Returning Anonymous Function'))
 
-        //=================================================================
+            //=================================================================
 
-        //Passing Anonymous Function As Argument
+            //Passing Anonymous Function As Argument
 
-        var x = function(para){
-            return para
-            //return para()    
-        };
-        console.log( x(function(){
-            return "Passing Anonymous Function As Argument"
-        }));
+            var x = function(para){
+                return para
+                //return para()    
+            };
+            console.log( x(function(){
+                return "Passing Anonymous Function As Argument"
+            }));
 
-        //=================================================================
+            //=================================================================
 
-        //Returning Anonymous Function
+            //Returning Anonymous Function
 
-        function show(x){
-            return function(y){
-                return x+y
-            }
-        };
-        console.log(show(10))
-        a= show(10)
-        console.log(a(10))
-    </script>
+            function show(x){
+                return function(y){
+                    return x+y
+                }
+            };
+            console.log(show(10))
+            a= show(10)
+            console.log(a(10))
+        </script>
     </body>
 </html>
