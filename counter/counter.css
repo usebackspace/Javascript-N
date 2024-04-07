@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(8, 141, 97);
+}
+
+.counter{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;   
+    color: aliceblue;
+}
+
+.counter_whole{
+    background-color: rgb(163, 6, 6);
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;    
+    margin-top: 150px;
+}
+
+input{
+    color: rgb(48, 16, 224);
+    border-radius: 10px;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+button{
+    border-radius: 10px;
+    color: rgb(114, 4, 4);
+    height: 50px;
+    width: 100px;
+    margin: 2px;
+    background-color: rgb(216, 219, 10);
+    font-size: 16px;
+}
+

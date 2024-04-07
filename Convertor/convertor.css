@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(9, 1, 43);
+}
+
+.main{
+    background-color: rgb(192, 241, 15);
+    border-radius: 10px;
+    border-color: aliceblue;
+    padding: 5px;
+    border: 8px double rgb(230, 9, 9);
+    width: 300px;
+    margin-top: 120px;
+    margin-left: 550PX;
+}
+
+.convert{
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.head{
+    text-align: center;
+    color: rgb(236, 118, 14);
+    border: 2px solid rgb(214, 13, 13);
+    border-radius: 5px;
+}
+
+#value{
+    text-align: center;
+    width: 59px;
+    height: 25px;
+    font-size: 24px;
+}
+
+.result{
+    text-align: center;
+    color: rgb(8, 29, 150);
+
+}
+
+.button{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(47, 151, 15);
+    font-size: 16px;
+    color: aliceblue;
+}

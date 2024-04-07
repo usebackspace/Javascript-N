@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="convertor.css">
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h1 class="heading"> Convertor</h1>
+        </div>
+        <div class="convert">
+                <input type="number" id="value" value="1"><br><br>
+                <div class="label">
+                    <input type="radio" id="m_to_c" name="convert">
+                    <label for="m_to_c">Meter → Centimeter</label><br>
+                    <input type="radio" id="km_to_m" name="convert">
+                    <label for="km_to_m">Kilometer → Meter</label><br>
+                    <input type="radio" id="km_to_mi" name="convert">
+                    <label for="km_to_mi">Kilometer → Miles</label><br>
+                    <button class="button" type="button" onclick="convert()">Convert</button>
+                </div>
+            </div>
+            <div class="result">
+                <h2 id="res"></h2>
+            </div>
+    </div>
+
+    <script src="convertor.js"></script>
+</body>
+</html>
