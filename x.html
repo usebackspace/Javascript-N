@@ -6,19 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <button type="button" onclick="sett()">clear</button>
     <script>
-        let avenger = new Object()
-
-        avenger.name= 'steve'
-        avenger['heroic name']='captain'
-        avenger.power = function(){
-            return 'hello'
+        console.log('callback')
+        
+        function shield(callback){
+            callback()
         }
 
-        console.log(avenger)
-        console.log(avenger['heroic name'])
-        <!-- delete avenger.power -->
-        console.log(avenger.power())
+        shield(()=>console.log('avenger Assembele'))
+
+        console.log('start')
+        var x =setTimeout(()=>console.log('avenger Assembele'),5000)
+        console.log('End')
+
+        function sett(){
+
+            clearTimeout(x)
+        }
     </script>
 </body>
 </html>
