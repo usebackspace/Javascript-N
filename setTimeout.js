@@ -10,6 +10,7 @@ console.log('setTimeout Session Start')
 var cto = setTimeout(function avenger() {
     console.log('Avenger Assemble')
 }, 5000)
+
 console.log('setTimeout Session end')
 
 function clear_timeout() {
@@ -24,6 +25,7 @@ console.log('setInterval Session Start')
 var ci = setInterval(function avenger() {
     console.log('Avenger Assemble')
 }, 2000)
+
 console.log('setInterval Session end')
 
 function clear_interval() {

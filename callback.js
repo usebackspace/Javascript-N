@@ -41,9 +41,12 @@ console.log('==== Asynchrnous Function ======')
 
 console.log('start')
 
+// In synchronus case we are using shield() i.e user defined function. where as setTimeout() is built in function
+
 setTimeout(function avenger() {
     console.log('Avenger Assemble')
-},2000)
+}, 2000)
+
 console.log('end')
 
 
