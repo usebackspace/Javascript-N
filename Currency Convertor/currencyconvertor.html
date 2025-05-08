@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>Currency Convertor</h1>
+            <div class="currency">
+                <form action="" name="form">
+                    <input type="number" name="amount" id="" value="1">
+                    <select name="from" id="">
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                        <option value="AED">AED</option>
+                    </select>
+                    
+                    <select name="to" id="">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="AED">AED</option>
+                    </select>
+                    <input type="button" name="" id="" onclick="convert()" value="Convert">
+                </form>
+            </div>
+            <h1 id="result"></h1>
+        </div>
+    </div>
+
+
+    <script>
+        const res = document.getElementById('result')
+        
+        async function convert(){
+            let from_data = document.form.from.value
+            let amount = document.form.amount.value
+
+            fetch(`https://api.exchangerate-api.com/v4/latest/${from_data}`)
+            .then(resonse=>resonse.json()
+            )
+            .then(
+                data=>{
+                    const to_data =document.form.to.value
+                    const rate = data.rates[to_data]
+                    const new_amount = (rate*amount).toFixed(2)
+                    res.textContent=new_amount
+
+                }
+            )
+            
+
+            /*
+            const resonse =await fetch(`https://api.exchangerate-api.com/v4/latest/${from_data}`)
+            const data =await resonse.json()
+           
+            const to_data =document.form.to.value
+            const rate = data.rates[to_data]
+            const new_amount = (rate*amount).toFixed(2)
+            res.textContent=new_amount
+
+            */
+        
+        }
+
+    </script>
+</body>
+</html>
